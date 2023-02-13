@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOPWATCH</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="justify-center items-center bg-cover flex flex-col" style="background-image:url(bg.jpg)">
+    <div class="mt-48  container p-10 max-w-xl text-center relative rounded-3xl bg-black bg-opacity-25 max-[444px]:p-4">
+      <h1 class="text-white text-3xl max-[444px]:text-2xl">Stopwatch</h1>
+      <p id="time" class="p-4 text-white text-8xl max-[444px]:text-6xl">
+        <span id="minutes">00</span>:<span id="second">00</span>:<span id="tens"
+          >00</span
+        >
+      </p>
+      <button id="start" class="p-2 m-4 rounded-2xl bg-slate-50 hover:opacity-60 text-xl">Start</button>
+      <button id="lap" class="p-2 m-4 rounded-2xl bg-slate-50 hover:opacity-60 text-xl">Lap</button>
+      <button id="stop" class="p-2 m-4 rounded-2xl bg-slate-50 hover:opacity-60 text-xl">Stop</button>
+      <button id="reset" class="p-2 m-4 rounded-2xl bg-slate-50 hover:opacity-60 text-xl">Reset</button>
+    </div>
+    <div id="laps" class="my-4 px-10 max-w-xl text-center relative rounded-3xl bg-black bg-opacity-25 hidden">
+        <h1 class="text-white">LAPS</h1>
+        <p id="lapsrecord" class="text-white text-xl"></p>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+</html>
